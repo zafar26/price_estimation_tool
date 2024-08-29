@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-28 15:21:07.777337",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Price Estimation Tool Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-08-28 15:25:20.618701",
+ "modified_by": "Administrator",
+ "module": "Price Estimation Tool",
+ "name": "Price Estimation Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

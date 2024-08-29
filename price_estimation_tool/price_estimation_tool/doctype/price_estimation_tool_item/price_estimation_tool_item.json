@@ -1,0 +1,197 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-08-28 10:38:24.577086",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "item_name",
+  "vendor_total_price",
+  "discount",
+  "exchange_rate",
+  "column_break_qfwf",
+  "qty",
+  "uom",
+  "vendor_list_price",
+  "vendor_net_price",
+  "sub_total",
+  "additional_costs_section",
+  "frieght",
+  "miscellaneous",
+  "column_break_nzbe",
+  "custom_duty",
+  "total_extra_cost",
+  "section_break_mtfg",
+  "markup",
+  "total_selling_price",
+  "column_break_untm",
+  "rate",
+  "profit"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "vendor_list_price",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Vendor List Price",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "discount",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Discount / Commission",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_qfwf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "qty",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Qty",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "vendor_total_price",
+   "fieldtype": "Float",
+   "label": "Vendor Total Price",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "exchange_rate",
+   "fieldtype": "Float",
+   "label": "Exchange Rate",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "additional_costs_section",
+   "fieldtype": "Section Break",
+   "label": "Additional Costs"
+  },
+  {
+   "fieldname": "frieght",
+   "fieldtype": "Currency",
+   "label": "Frieght"
+  },
+  {
+   "fieldname": "miscellaneous",
+   "fieldtype": "Currency",
+   "label": "Miscellaneous"
+  },
+  {
+   "fieldname": "column_break_nzbe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "custom_duty",
+   "fieldtype": "Currency",
+   "label": "Custom Duty"
+  },
+  {
+   "fieldname": "total_extra_cost",
+   "fieldtype": "Currency",
+   "label": "Total Extra Cost",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_mtfg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_selling_price",
+   "fieldtype": "Currency",
+   "label": "Total Selling Price",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "markup",
+   "fieldtype": "Percent",
+   "in_list_view": 1,
+   "label": "Markup"
+  },
+  {
+   "fieldname": "column_break_untm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vendor_net_price",
+   "fieldtype": "Float",
+   "label": "Vendor Net Price",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "profit",
+   "fieldtype": "Currency",
+   "label": "Profit",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "sub_total",
+   "fieldtype": "Currency",
+   "label": "Sub Total",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "label": "Unit Selling Price",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "item_code.stock_uom",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-08-29 13:00:45.570829",
+ "modified_by": "Administrator",
+ "module": "Price Estimation Tool",
+ "name": "Price Estimation Tool Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
